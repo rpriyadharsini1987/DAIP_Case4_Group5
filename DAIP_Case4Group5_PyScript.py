@@ -187,3 +187,51 @@ plt.tight_layout()
 
 # Display plot
 plt.show()
+
+
+# Section 4.1 Contextual Factors Influencing Mistake Rates
+print("\n Contextual Factors Influencing Mistake Rates\n")
+
+# Possible external factors influencing error rates
+contextual_factors = {
+    'Aggressive Playing Styles': 'Increased frequency of corners and yellow cards.',
+    'Tactical Changes by Teams': 'More strategic fouls and interruptions leading to more reportable events.',
+    'Officiating Standards': 'Stricter enforcement leading to higher reportable incident rates.',
+}
+
+# Display contextual factors clearly
+for factor, description in contextual_factors.items():
+    print(f"{factor}: {description}")
+
+# Create a simple visualization (optional but recommended)
+plt.figure(figsize=(8, 5))
+factor_names = list(contextual_factors.keys())
+factor_impacts = [10, 8, 7]  # Hypothetical scale (1-10) representing impact
+
+plt.barh(factor_names, factor_impacts, color='skyblue')
+plt.xlabel('Impact Level (Hypothetical)', fontsize=12)
+plt.title('Contextual Factors Influencing Mistake Rates', fontsize=14, fontweight='bold')
+plt.gca().invert_yaxis()
+plt.show()
+
+# Section 5.1 External Match Dynamics
+print("\n External Match Dynamics\n")
+
+# External factors not quantitatively assessed yet but suggested for future analysis
+external_dynamics = [
+    'Evolution of team tactics towards aggressive pressing',
+    'Modified officiating rules increasing reportable events',
+    'Fluctuations in player behavior during critical matches'
+]
+
+print("Suggested areas for future quantitative assessment:")
+for dynamic in external_dynamics:
+    print(f"- {dynamic}")
+
+# Documentation for future analysis
+future_research_notes = """
+Future analyses should quantitatively integrate these external dynamics,
+potentially by tracking corresponding rule changes, referee reports, and tactical analyses from expert commentaries.
+"""
+
+print(future_research_notes)
